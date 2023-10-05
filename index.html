@@ -1,82 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-</head>
-<body>
-    
-    <div class="image">
-        <img src="pic.jpg"width="80%" height="80%" alt=""> 
-    </div>
-    <table border="5px"align="center" width="900px">
-        
-        <tr>
-            <td width="300px" bgcolor="1c2833"style="color:white; padding:20px;">
-                
-             <h1>Personal Details</h1>
-             <hr>
-             <p><b>Name:</b><br>
-                Syed Haris Shah <br><br><hr>
-                <b>Address:</b><br>
-                Pajaggi Road Saeed Abad No#2 Peshawar <br><br><hr>
-                <b>Contect Info:</b><br>
-                03494556592 <br><br><hr>
-                <b>Email Address:</b><br>
-                hshah0229@gmail.com <br><br><hr>
-            </p>   
-            </td>
-     
-        <td width="900px"height="80px" bgcolor="#FDFEFE" style="padding: 10px;">
-            <h1 align="center"><strong>RESUME</strong></h1>
-            <h1>Summury</h1>
-            <hr>
-            <p> I have acquired technical khowledge and skills from my course as prectical and skills from my industrial year in a company
-               i have used a range of languages such as HTML,CSS,PHP etc.operating system and development as well as experiencing SDLC.</p>
-            <h2>Skill Highlights</h2><hr>
-            <ul style="list-style: none;">
-                <li> 
-                    <label for="file">HTML & CSS</label>
-                    <progress id="file" value="100" max="100"></progress>
-                </li>
-                <li>
-                    <label for="file">JavaScript</label>
-                    <progress id="file" value="80" max="100"></progress>
-                </li>
-                <li>
-                    <label for="file">MERN STACK</label>
-                    <progress id="file" value="60" max="100"></progress>
-                </li>
-                <li>
-                    <label for="file">Python</label>
-                    <progress id="file" value="80" max="100"></progress>
-                </li><hr>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+
+        html {
+            font-family: "jost", sans-serif;
+        }
+
+        .social-links a {
+            color: rgb(19, 58, 231);
+            text-decoration: none;
+            font-weight: 600;
             
-            </ul>
-            <h2>Education</h2><hr> 
-            <ul>
-                <li>Matric - 2016</li>
-                <li>FSC - 2019</li>
-                <li>Current BSCS</li><hr>
-            </ul>
-               <h2>Work Experience<hr></h2>
-            <ul>
-                <li>Web Development project concepts</li>
-                <li>Cooperate with disigners to create clean interface</li>
-                <li>Carry out quality assurance tests</li><hr>
-            </ul>
-            <h2>Projects<hr></h2>
-            <ul>
-                <li>
-                    <p>Automated Agriculture Irrigation System Using Remote Sensor & Weather Forecast</p>
-                </li>
-            </ul>
+        }
+        
+        .social-links li {
+            list-style: none;
+        }
+
+        a:hover {
+            /* color: aliceblue; */
+            transition: ease-out;
+
+        }
+
+        #table {
+            border: 5px solid black;
+            margin: auto;
+            width: 1000px;
+        }
+        .td {
+
+        }
+        ul.links li.printAble {
+                display: none;
+            }
+
+        @media print {
+            ul.links li.n-print {
+                display: none;
+            }
+            ul.links li.printAble {
+                display: inline-block;
+            }
+
+            ul.links {
+                font-weight: 600;
+            }
             
 
-        </td>
-    </tr>
-    </table>       
+        }
+        .td1 {
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            color: black;
+            border-right: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+
+    <table id="table">
+
+        <tr>
+            <td class="td1">
+                <figure><img src="my_pic.jpg" alt="pic" height="350"></figure>
+                <h1>Personal Details</h1>
+                <hr>
+                <p><b>Name:</b><br>
+                    Syed Haris Shah <br><br>
+                    <hr>
+                    <b>Address:</b><br>
+                    Pajaggi Road Saeed Abad No#2 Peshawar <br><br>
+                    <hr>
+                    <b>Contect Info:</b><br>
+                    03494556592 <br><br>
+                    <hr>
+                    <b>Email Address:</b><br>
+                    hshah0229@gmail.com <br><br>
+                    <hr>
+                </p>
+                <div class="social-links">
+                    <!-- <p>
+                        <a href="https://www.linkedin.com/in/syed-haris-shah-231578213" class="nonprintable">LinkdIn
+                            :</a>
+                        <a
+                            href="https://www.linkedin.com/in/syed-haris-shah-231578213">https://www.linkedin.com/in/syed-haris-shah-231578213</a>
+                    </p>
+
+                    <p>
+                        <a href="https://instagram.com/syed_haris_shah35?igshid=OGQ5ZDc2ODk2ZA==">Instagram :</a>
+                        <a
+                            href="https://instagram.com/syed_haris_shah35?igshid=OGQ5ZDc2ODk2ZA==">https://instagram.com/syed_haris_shah35?igshid=OGQ5ZDc2ODk2ZA==</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/Syed-Haris-shah">Github :</a>
+                        <a href="https://github.com/Syed-Haris-shah">https://github.com/Syed-Haris-shah</a>
+                    </p>
+                    <p>
+                        <a href="https://x.com/Haris_Shah23?t=UryC8FRmHNC__NE86cmEVA&s=08">Twitter :</a>
+                        <a
+                            href="https://x.com/Haris_Shah23?t=UryC8FRmHNC__NE86cmEVA&s=08">https://x.com/Haris_Shah23?t=UryC8FRmHNC__NE86cmEVA&s=08</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/syed.harisshah.3591">Facebook :</a>
+                        <a
+                            href="https://www.facebook.com/syed.harisshah.3591">https://www.facebook.com/syed.harisshah.3591</a>
+                    </p> -->
+                    <h3>Social Links</h3>
+                    <ul class="links">
+                        <li class="n-print">
+                            <a href="https://www.linkedin.com/in/syed-haris-shah-231578213">LinkdIn
+                            </a>
+                        </li>
+                        <li  class="printAble">
+                            LinkdIn :
+                            <a
+                            href="https://www.linkedin.com/in/syed-haris-shah-231578213" >https://www.linkedin.com/in/syed-haris-shah-231578213</a>
+                        </li>
+                        <li  class="n-print">
+                            <a href="https://github.com/Syed-Haris-shah">Github</a>
+                        </li>
+                        <li  class="printAble">
+                            Github :
+                            <a href="https://github.com/Syed-Haris-shah">https://github.com/Syed-Haris-shah</a>
+                        </li>
+                        <li class="n-print">
+                            <a href="https://x.com/Haris_Shah23?t=UryC8FRmHNC__NE86cmEVA&s=08">Twitter</a>
+                        </li>
+                        <li  class="printAble">
+                            Twitter :
+                            <a
+                            href="https://x.com/Haris_Shah23?t=UryC8FRmHNC__NE86cmEVA&s=08">https://x.com/Haris_Shah23?t=UryC8FRmHNC__NE86cmEVA&s=08</a>
+                        </li>
+                        <li class="n-print">
+                            <a href="https://www.facebook.com/syed.harisshah.3591">Facebook</a>
+                        </li>
+                        <li  class="printAble">
+                            Facebook :
+                            <a
+                            href="https://www.facebook.com/syed.harisshah.3591">https://www.facebook.com/syed.harisshah.3591</a>
+                        </li>
+                        <li class="n-print">
+                            <a href="https://instagram.com/syed_haris_shah35?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+                        </li>
+                        <li  class="printAble">
+                            Instagram :
+                            <a
+                            href="https://instagram.com/syed_haris_shah35?igshid=OGQ5ZDc2ODk2ZA==">https://instagram.com/syed_haris_shah35?igshid=OGQ5ZDc2ODk2ZA==</a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+
+            <td class="td" width="900px" height="80px" style="padding: 10px;">
+                <h1 align="center"><strong>RESUME</strong></h1><br><br><br>
+                <h1>Summury</h1>
+                <hr>
+                <p> I have acquired technical khowledge and skills from my course as prectical and skills from my
+                    industrial year in a company
+                    i have used a range of languages such as HTML,CSS,PHP etc.operating system and development as well
+                    as experiencing SDLC.</p>
+                <h2>Skill Highlights</h2>
+                <hr>
+                <ul style="list-style: none;">
+                    <li>
+                        <label for="file">HTML & CSS</label>
+                        <progress id="file" value="100" max="100"></progress>
+                    </li><br>
+                    <li>
+                        <label for="file">JavaScript</label>
+                        <progress id="file" value="80" max="100"></progress>
+                    </li><br>
+                    <li>
+                        <label for="file">MERN STACK</label>
+                        <progress id="file" value="60" max="100"></progress>
+                    </li><br>
+                    <li>
+                        <label for="file">Python</label>
+                        <progress id="file" value="80" max="100"></progress>
+                    </li>
+                    <hr>
+
+                </ul>
+                <h2>Education</h2>
+                <hr>
+                <ul>
+                    <li>Matric - 2016</li>
+                    <li>FSC - 2019</li>
+                    <li>Current BSCS</li>
+                    <hr>
+                </ul>
+                <h2>Work Experience
+                    <hr>
+                </h2>
+                <ul>
+                    <li>Web Development project concepts</li>
+                    <li>Cooperate with disigners to create clean interface</li>
+                    <li>Carry out quality assurance tests</li>
+                    <hr>
+                </ul>
+                <h2>Projects
+                    <hr>
+                </h2>
+                <ul>
+                    <li>
+                        <p>Automated Agriculture Irrigation System Using Remote Sensor & Weather Forecast</p>
+                    </li>
+                </ul>
+
+
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>
